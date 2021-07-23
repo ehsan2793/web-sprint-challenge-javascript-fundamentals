@@ -30,10 +30,10 @@ For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you ma
 
 function summation(number) {
   let counter = 0;
-  for (let i = 1; i <= number; i++) {   // we are looping untill i becaomes equal to number
+  for (let i = 1; i <= number; i++) {   // we are looping until i becomes equal to number
     counter += i                        // we add the i value to the counter that was set to 0 every time loop happens so counter becomes 1 then 2 is added to it then 3 and ....
   }
-return counter;                         // we are returing our variable 
+return counter;                         // we are returning our variable 
   }
  console.log(summation(7))
 
@@ -61,7 +61,7 @@ const zooAnimals = [
 
 // we can give any array as a parameter
   function animalNames(array){
-    const displayNames = [];   // since .forEach does not automatically make an array first we must declear an empty array so we can push into it
+    const displayNames = [];   // since .forEach does not automatically make an array first we must declare an empty array so we can push into it
     array.forEach(item => displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`)); // .forEach will loop through the given array and pickup name and scientific name and push them into empty array
     return displayNames  // returning an empty array that we make --> its not is not empty and includes stuff that we pushed into it 
   }
@@ -75,7 +75,7 @@ const zooAnimals = [
 
   function lowerCaseNames(array){
     const lowerCase = array.map(item => item.animal_name.toLowerCase()); // .map makes an array and modifications the name goes there
-    return lowerCase // we need to return our newly foremd array to see our results
+    return lowerCase // we need to return our newly formed array to see our results
   }
   console.log(lowerCaseNames(zooAnimals))
   
@@ -97,7 +97,7 @@ const zooAnimals = [
   */
 
   function USApop(array){
-    const total = array.reduce((accumulator,item) => accumulator +item.population,0); // .reduce accumulator starts from 0 becasue we told it by giving it initial value of 0, since we are adding
+    const total = array.reduce((accumulator,item) => accumulator +item.population,0); // .reduce accumulator starts from 0 because we told it by giving it initial value of 0, since we are adding
     return total
   }
   console.log(USApop(zooAnimals))
@@ -117,7 +117,7 @@ const zooAnimals = [
   /* 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁 */
  // 🦁🦁🦁 Use add to return the sum of two numbers 🦁🦁🦁
   
-function add(a,b){              // add is out call back fucntion that is used in consume as call back (cb)
+function add(a,b){              // add is out call back function that is used in consume as call back (cb)
     return a + b
   }
 
@@ -147,7 +147,7 @@ function greeting(first,last){
 /* 🐴🐴🐴 Step 1: Base Constructor 🐴🐴🐴
  Use the constructor function named CuboidMaker to accept properties for length, width, and height which can be initialized as an object
 */
-function CuboidMaker(attributes){  // we are declarating the properties of CuboidMaker
+function CuboidMaker(attributes){  // we are declaring the properties of CuboidMaker
   this.length = attributes.length;
   this.width = attributes.width;
   this.height = attributes.height;
@@ -221,13 +221,13 @@ console.log(cuboidTwo.volume()); // 100
 
 // class CubeMaker extends  CuboidMaker {
 //   constructor (attributes) {
-//     super(attributes)  // we are telling child to inherint all the properties and methold of the parent 
+//     super(attributes)  // we are telling child to inherit all the properties and method of the parent 
 //   } //new method goes here
 //   cubeSurfaceArea () {
 //     return Math.pow(this.length,2) * 6               // cube surface area  = a^2 * 6    --> "a" is the edge --> o if i give it length 2 is should get 24 as the reuslt in console.log
 // }
 // cubeVolume() {
-//    return Math.pow(this.length,3)         // volume =  a^3   --> "a" is the edge  --> so if i give it length 2 is should get 8 as the reuslt in console.log 
+//    return Math.pow(this.length,3)         // volume =  a^3   --> "a" is the edge  --> so if i give it length 2 is should get 8 as the result in console.log 
 //   }
 // }
 // const cuboidchild = new CubeMaker({
