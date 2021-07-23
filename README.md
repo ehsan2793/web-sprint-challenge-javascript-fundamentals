@@ -26,6 +26,12 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+ .map(): is used to converting data and  need retun keyword  and returns a new array the first argument is (item) which refers to  the current element in the array being processed 
+ .filter(): requires return stament  and returns a new array automatically  filters results into a new array based on something that can be true or false, if it's true it's included, if it's false it excluded
+
+.reduce():  reduce gives us back a single value, its usally  used for sum or muliply  and it takes 2 arguments accumulator which is a running total and it takes item which is the current value 
+ inital value  and has inital value 
+
 2. Explain the difference between a callback and a higher order function.
 
 3. Explain what a closure is.
