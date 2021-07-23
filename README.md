@@ -27,18 +27,40 @@ Edit this document to include your answers after each question. Make sure to lea
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
  .map(): is used to converting data and  need retun keyword  and returns a new array the first argument is (item) which refers to  the current element in the array being processed 
- .filter(): requires return stament  and returns a new array automatically  filters results into a new array based on something that can be true or false, if it's true it's included, if it's false it excluded
+ .filter(): requires return statment  and returns a new array automatically  filters results into a new array based on something that can be true or false, if it's true it's included and is moved to the newlly formed array if it's false it excluded and does not show in the array.
 
-.reduce():  reduce gives us back a single value, its usally  used for sum or muliply  and it takes 2 arguments accumulator which is a running total and it takes item which is the current value 
- inital value  and has inital value 
+.reduce():  .reduce gives us back a single value, its usally used for sum or muliply and it takes 2 arguments "accumulator" which is a running total and it takes "item" which is the current value
+ inital value is the inital value that the accumulator starts from for example we can give it 10 and it will start from 10 or give it 1, or any other number and it will start from that inital value.
 
 2. Explain the difference between a callback and a higher order function.
+ 
+callback  fucntion are passed into other function as an argumen --->  function higherOrder (callback){return ...}
+higher order function recive the callback function as arguments
 
 3. Explain what a closure is.
 
+when a function is created within another function, the inside function has an acces to the outer function varibles  we call that inner function closure
+for example :    inner function is the closure becasue it has access to the "number" that is defined in the outer function does not have acces to "value" that is defined in the inner function.
+function outer (){
+    let number = 10
+}return function inner () { 
+    let value = 100
+    console.log(numebr, value)
+}
+
 4. Describe the four principles of the 'this' keyword.
 
+     *   Window Binding - is viewed as error  and is when none of the rules apply and will give us the global object or undefind in strict mode 
+
+     *  implicit binding - when the function is invoked we look to the left side of the dot and "this" refers to that 
+
+     *  explicit binding -  assign "this" explicitly  using  using .bind , .call , . apply 
+
+     * new bidning - when the function is created  its invoked as constructor function and "this" will point to the new object that is created
+
 5. Why do we need super() in an extended class?
+
+super () tells the child (extended class ) to inherit the attributes and methods of the parent class
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
