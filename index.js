@@ -191,12 +191,27 @@ console.log(cuboid.surfaceArea()); // 130
 //🦄🦄🦄 1. Take your prototypes from above and refactor into class syntax. Please rename your class CuboidMakerTwo and your object cuboidTwo 🦄🦄🦄
 class CuboidMakerTwo{
 
-}
-
+  constructor(attributes) {
+    this.length = attributes.length;
+    this.width = attributes.width;
+    this.height = attributes.height;
+  }  // this where we give our method 
+surfaceArea () {
+  return 2*(this.length * this.width +this.length * this.height +this.width * this.height)
+ }
+ volume() {
+  return this.length * this.width * this.height
+ }
+} // class curly end 
+const cuboidTwo = new CuboidMakerTwo({   // our object that has length ,width, and height and value for each property
+  length: 4,
+  width: 5,
+  height:5,
+})
 
 //🦄🦄🦄 Test your volume and surfaceArea methods by uncommenting the logs below: 🦄🦄🦄
-// console.log(cuboidTwo.volume()); // 100
-// console.log(cuboidTwo.surfaceArea()); // 130
+console.log(cuboidTwo.volume()); // 100
+ console.log(cuboidTwo.surfaceArea()); // 130    //yayyy
 
 
 
