@@ -26,26 +26,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
- .map(): is used to converting data and  need retun keyword  and returns a new array the first argument is (item) which refers to  the current element in the array being processed 
- .filter(): requires return statment  and returns a new array automatically  filters results into a new array based on something that can be true or false, if it's true it's included and is moved to the newlly formed array if it's false it excluded and does not show in the array.
+ .map(): is used to converting data and  need return keyword  and returns a new array the first argument is (item) which refers to  the current element in the array being processed 
+ .filter(): requires return statement  and returns a new array automatically  filters results into a new array based on something that can be true or false, if it's true it's included and is moved to the newly formed array if it's false it excluded and does not show in the array.
 
-.reduce():  .reduce gives us back a single value, its usally used for sum or muliply and it takes 2 arguments "accumulator" which is a running total and it takes "item" which is the current value
- inital value is the inital value that the accumulator starts from for example we can give it 10 and it will start from 10 or give it 1, or any other number and it will start from that inital value.
+.reduce():  .reduce gives us back a single value, its usually used for sum or multiply and it takes 2 arguments "accumulator" which is a running total and it takes "item" which is the current value
+ initial value is the initial value that the accumulator starts from for example we can give it 10 and it will start from 10 or give it 1, or any other number and it will start from that initial value.
 
 2. Explain the difference between a callback and a higher order function.
  
-callback  fucntion are passed into other function as an argumen --->  function higherOrder (callback){return ...}
-higher order function recive the callback function as arguments
+callback  function are passed into other function as an argument --->  function higherOrder (callback){return ...}
+higher order function receive the callback function as arguments
 
 3. Explain what a closure is.
 
-when a function is created within another function, the inside function has an acces to the outer function varibles  we call that inner function closure
-for example :    inner function is the closure becasue it has access to the "number" that is defined in the outer function does not have acces to "value" that is defined in the inner function.
+when a function is created within another function, the inside function has an access to the outer function variables  we call that inner function closure
+for example :    inner function is the closure because it has access to the "number" that is defined in the outer function does not have access to "value" that is defined in the inner function.
 function outer (){
     let number = 10
 }return function inner () { 
     let value = 100
-    console.log(numebr, value)
+    console.log(number, value)
 }
 
 4. Describe the four principles of the 'this' keyword.
